@@ -1,0 +1,83 @@
+// Colors
+//----------------------------------------------------------
+$bg: #eee;
+$dark-grey: #333;
+$purple: #6b5475;
+$lighter-purple: lighten($purple, 20%);
+$green: #6e9796;
+$lighter-green: lighten($green, 20%);
+//----------------------------------------------------------
+
+
+
+// Fonts
+//----------------------------------------------------------
+$heading: 'Oswald', sans-serif;
+$sans-serif: 'Open Sans', sans-serif;
+$serif: 'Arvo', serif;
+//----------------------------------------------------------
+
+
+
+// Form Elements
+//----------------------------------------------------------
+#{$all-text-inputs} {
+
+}
+
+
+#{$all-text-inputs-focus} {
+
+}
+//----------------------------------------------------------
+
+
+
+// Mixins
+//----------------------------------------------------------
+
+//----------------------------------------------------------
+
+
+
+// HTML Elements
+//----------------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-family: $heading;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+.container {
+	@include outer-container;
+	padding: 0px 20px;
+}
+
+
+@for $i from 3 through 12 {
+	.column-#{$i} {
+		@include media(769px) {
+			@include span-columns($i);
+		}
+	}
+}
+
+
+@for $i from 1 through 6 {
+	.shift-#{$i} {
+		@include media(769px) {
+			@include shift($i);
+		}
+	}
+}
