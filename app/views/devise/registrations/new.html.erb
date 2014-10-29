@@ -1,18 +1,52 @@
-<h2>Sign up</h2>
+<div id="register">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+	<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+		<h2>Sign up</h2>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+		<%= devise_error_messages! %>
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+		<h3>User Information</h3>
+		<div><%= f.label :email %><br />
+		<%= f.email_field :email, autofocus: true %></div>
 
-  <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+		<div><%= f.label :password %><br />
+		<%= f.password_field :password, autocomplete: "off" %></div>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+		<div><%= f.label :password_confirmation %><br />
+		<%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
-<%= render "devise/shared/links" %>
+		<h3>Institution Information</h3>
+		<%= fields_for :institution do |i| %>
+		<div class="field">
+			<%= i.label :name %><br>
+			<%= i.text_field :name %>
+		</div>
+		<div class="field">
+			<%= i.label :code %><br>
+			<%= i.text_field :code %>
+		</div>
+		<div class="field">
+			<%= i.label :street %><br>
+			<%= i.text_field :street %>
+		</div>
+		<div class="field">
+			<%= i.label :address %><br>
+			<%= i.text_field :address %>
+		</div>
+		<div class="field">
+			<%= i.label :city %><br>
+			<%= i.text_field :city %>
+		</div>
+		<div class="field">
+			<%= i.label :zip %><br>
+			<%= i.text_field :zip %>
+		</div>
+		<div class="field">
+			<%= i.label :phone %><br>
+			<%= i.text_field :phone %>
+		</div>
+		<% end %>
+
+		<div><%= f.submit "Sign up" %></div>
+	<% end %>
+</div>

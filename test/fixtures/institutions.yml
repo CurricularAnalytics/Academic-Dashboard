@@ -2,14 +2,18 @@
 
 one:
   name: MyString
+  code: MyString
+  street: MyString
   address: MyString
-  state: MyString
-  cityzip: MyString
+  city: MyString
+  zip: MyString
   phone: MyString
 
 two:
   name: MyString
+  code: MyString
+  street: MyString
   address: MyString
-  state: MyString
-  cityzip: MyString
+  city: MyString
+  zip: MyString
   phone: MyString

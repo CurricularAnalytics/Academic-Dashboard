@@ -1,0 +1,49 @@
+<h1>New institution</h1>
+
+<%= form_for(@institution) do |f| %>
+	<% if @institution.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@institution.errors.count, "error") %> prohibited this institution from being saved:</h2>
+
+			<ul>
+			<% @institution.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="field">
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.label :code %><br>
+		<%= f.text_field :code %>
+	</div>
+	<div class="field">
+		<%= f.label :street %><br>
+		<%= f.text_field :street %>
+	</div>
+	<div class="field">
+		<%= f.label :address %><br>
+		<%= f.text_field :address %>
+	</div>
+	<div class="field">
+		<%= f.label :city %><br>
+		<%= f.text_field :city %>
+	</div>
+	<div class="field">
+		<%= f.label :zip %><br>
+		<%= f.text_field :zip %>
+	</div>
+	<div class="field">
+		<%= f.label :phone %><br>
+		<%= f.text_field :phone %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>
+
+

@@ -18,7 +18,11 @@
 			<nav id="static-nav">
 				<%= link_to 'About' %>
 				<%= link_to 'Services' %>
-				<%= link_to 'Sign Up' %>
+				<% if user_signed_in? %>
+					<%= link_to 'Sign Out', 'users/sign_out', method: :delete %>
+				<% else %>
+					<%= link_to 'Sign Up', 'users/sign_up' %>
+				<% end %>
 			</nav>
 		</div>
 	</header>

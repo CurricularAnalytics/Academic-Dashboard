@@ -19,3 +19,39 @@ footer {
 
 	background-color: $dark-grey;
 }
+
+
+#register {
+	@include outer-container;
+	margin-top: 70px;
+
+	h2,
+	h3 {
+		font-family: $heading;
+		color: $purple;
+		text-align: center;
+		margin: 10px;
+	}
+
+	form {
+		background-color: white;
+		padding: 20px;
+		margin: 20px;
+		@include span-columns(8);
+		@include shift(2);
+
+		box-shadow: 0 0 3px rgba(0,0,0,0.1);
+
+		#{$all-text-inputs} {
+			width: 100%;
+			padding: 10px 10px;
+			margin-bottom: 20px;
+
+			font-size: 14px;
+			font-weight: bold;
+			color: $dark-grey;
+			border: 2px solid $light-grey;
+			&:focus {outline: none; border: 2px solid $green;}
+		}
+	}
+}

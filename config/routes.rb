@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
 	root 'static#home'
+
+	resources :institutions
+
+	devise_for :users, :controllers => {:registrations => 'custom_devise/registrations'}
 end
