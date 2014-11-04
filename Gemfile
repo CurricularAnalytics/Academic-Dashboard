@@ -21,3 +21,17 @@ gem 'devise'
 gem 'bourbon'
 
 gem 'neat'
+
+group :development do 
+	# For Deploying
+	gem 'capistrano'
+	gem 'capistrano-rails'
+	gem 'capistrano-bundler'
+	gem 'capistrano-rvm'
+end
+
+
+group :production do
+	gem 'unicorn'
+	gem 'unicorn-rails'
+end
