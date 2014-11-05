@@ -25,7 +25,7 @@ set :rails_env, :production
 
 task :restart do
 	on roles(:app) do
-		execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
-		execute "cd /home/ubuntu/apps/current; unicorn_rails -c config/unicorn.rb -E production -D"
+		#execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
+		#execute "cd /home/ubuntu/apps/current; unicorn_rails -c config/unicorn.rb -E production -D"
 	end
 end
