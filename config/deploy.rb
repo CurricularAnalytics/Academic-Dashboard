@@ -28,6 +28,6 @@ task :restart do
 		#execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
 		#execute "cd /home/ubuntu/apps/current"
 		#execute "unicorn_rails -c config/unicorn.rb -E production -D"
-		#execute "rails s"
+		execute "cd /home/ubuntu/apps/current; sh start.sh"
 	end
 end
