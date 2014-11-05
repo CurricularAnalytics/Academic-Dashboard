@@ -28,6 +28,6 @@ task :restart do
 		#execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
 		#execute "cd /home/ubuntu/apps/current"
 		#execute "unicorn_rails -c config/unicorn.rb -E production -D"
-		execute "cd /home/ubuntu/apps/current; sh start.sh"
+		execute "cd /home/ubuntu/apps/current; /home/ubuntu/.rvm/rubies/ruby-2.1.4/bin/ruby test.rb"
 	end
 end

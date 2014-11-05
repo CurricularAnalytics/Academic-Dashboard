@@ -1,1 +1,1 @@
-puts "HELLO WORLD!"
+`unicorn_rails -c config/unicorn.rb -E production -D`
