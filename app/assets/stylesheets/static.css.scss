@@ -3,6 +3,7 @@
 	height: 80px;
 	position: fixed;
 	top: 0;
+	z-index:5;
 
 	background-color: $dark-grey;
 }
@@ -23,7 +24,10 @@
 	float: right;
 	margin-top: 28px;
 
-	a {
+	a,#sign-in-link {
+		display:inline-block;
+		vertical-align:middle;
+		cursor:pointer;
 		margin-left: 20px;
 
 		color: white;
@@ -34,6 +38,50 @@
 
 		&:hover {
 			color: $lighter-green;
+		}
+	}
+	#remember-me-label,#sign-in-form{
+		color: white;
+		font-size: 14px;
+	}
+	#sign-in-link{
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	#sign-in-form{
+		font-size:12px;
+		white-space:nowrap;
+		overflow:hidden;
+		opacity:0;
+		margin-top:-15px;
+		margin-left:10px;
+		float:right;
+		#submit{
+			input{
+				color: white;
+				border:1px solid white;
+				border-radius:1px;
+				padding:3px;
+				cursor:pointer;
+				background:rgba(0,0,0,0);
+				&:hover{
+					color: $lighter-green;
+					border-color: $lighter-green;
+				}
+			}
+		  transform: translateY(-85%);
+		  -webkit-transform: translateY(-80%);
+		}
+		div{
+			margin-left:10px;
+			display:inline-block;
+			a,#remember-me-label{
+				opacity:0.7;
+				text-transform: none;
+				font-weight: normal;
+				font-size:10px;
+				margin-left: 0px;
+			}
 		}
 	}
 }
@@ -48,10 +96,27 @@
 	background-size: cover;
 	background-color: $purple;
 	padding-top: 100px;
+	position:relative;
+}
+#carousel:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+    background: rgba(0,0,0,.4);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
-
 #carousel-content {
+	position:relative;
+	z-index:2;
 	color: white;
 	text-align: center;
 	font-family: $serif;
@@ -65,7 +130,8 @@
 		font-size: 20px;
 	}
 
-	a {
+	a,#get-started-link {
+		cursor:pointer;
 		margin-top: 50px;
 		display: inline-block;
 		
@@ -87,6 +153,68 @@
 	padding: 100px 0px;
 }
 
+#sign-up{
+	#get-started-info{
+		float:left;
+		width:50%;
+		border:2px solid $green;
+		padding:50px;
+		height:100%;
+		vertical-align:middle;
+	}
+	#sign-up-errors{
+		li{
+			list-style:none;
+			font-size:12px;
+			color:$red;
+		}
+	}
+	.field_with_errors{
+		color:$red;
+	}
+	label{
+		display:block;
+	}
+	padding: 50px 0px;
+	#register{
+		margin:0px;
+		padding:0px;
+	}
+	form{
+		margin:0px;
+		padding:0px;
+		float:right;
+		width:410px;
+		background:rgba(0,0,0,0);
+		box-shadow:none;
+		input{
+			margin-bottom:10px !important;
+		}
+	}
+	.long-field{
+		margin-left:10px;
+		width:395px;
+	}
+	.short-field{
+		display:inline-block;
+		margin-left:10px;
+		width:190px;
+	}
+	#sign-up-button input{
+		margin-left:10px;
+		cursor:pointer;
+		background:rgba(0,0,0,0);
+		border:2px solid #555;
+		border-radius:1px;
+		&:hover{
+			color: $green;
+			border-color: $green;
+		}
+	}
+	h3{
+//		text-align:right;
+	}
+}
 
 #some-info {
 	//margin-top: 50px;

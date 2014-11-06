@@ -21,7 +21,9 @@
 				<% if user_signed_in? %>
 					<%= link_to 'Sign Out', 'users/sign_out', method: :delete %>
 				<% else %>
-					<%= link_to 'Sign Up', 'users/sign_up' %>
+					<!--<%= link_to 'Sign Up', 'users/sign_up' %>-->
+					<span id='sign-in-link'>Sign In</span>			
+					<%= render 'layouts/sign_in' %>			
 				<% end %>
 			</nav>
 		</div>

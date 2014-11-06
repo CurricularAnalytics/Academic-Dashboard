@@ -1,42 +1,53 @@
 <section id="carousel">
 	<div id="carousel-content" class="container">
-		<h1>Some Heading</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec purus velit. Vivamus blandit libero at nibh consequat commodo. Quisque rutrum diam tortor, vel suscipit augue pulvinar in. Sed convallis lacus sapien, quis sodales libero accumsan a. Mauris dictum tellus ut diam elementum porttitor.</p>
-		<%= link_to 'Get Started' %>
+		<h1>Data-driven Decision Making</h1>
+		<p>Colleges and universities are under increasing pressure to achieve their institutional goals in the face of higher expectations and limited resources. The  higher education decision-making environment is highly complex, and the decisions you make affect the lives of students, faculty and staff. To learn how Academic Dashboards can assist you in making data-driven decisions, click the Get Started link below.</p>
+		<div id='get-started-link'>Get Started</div>
+		<!--<%= link_to 'Get Started' %>-->
 	</div>
 </section>
 
 
 <section id="some-info" class="container section">
 	<div class="column-4 info">
-		<div class="circle"></div>
-		<h2>Heading</h2>
+		<!--<div class="circle"></div>-->
+		<h2>Data</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec purus velit. Vivamus blandit libero at nibh consequat commodo.</p>
 	</div>
 
 	<div class="column-4 info">
-		<div class="circle"></div>
-		<h2>Heading</h2>
+		<!--<div class="circle"></div>-->
+		<h2>Analytics</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec purus velit. Vivamus blandit libero at nibh consequat commodo.</p>
 	</div>
 
 	<div class="column-4 info">
-		<div class="circle"></div>
-		<h2>Heading</h2>
+		<!--<div class="circle"></div>-->
+		<h2>Visualization</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec purus velit. Vivamus blandit libero at nibh consequat commodo.</p>
 	</div>
 </section>
 
-
 <section id="some-graph" class="section">
 	<div class="container">
 		<div class="column-5">
-			<%= image_tag "graph.png", height: "250px" %>
+			<iframe height = '250px' width = '300px' src='http://oias1.unm.edu:4567/charts/grad'></iframe>						
+			<!--<%= image_tag "graph1.png", height: "250px" %>-->
 		</div>
 		<div class="column-7">
-			<h2>Some Heading</h2>
+			<h2><u>Dashboards without Headaches</u></h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec purus velit. Vivamus blandit libero at nibh consequat commodo.</p>
-		</div>
+			<%=link_to 'Dashboard Gallery (coming soon)'%>		
+		</div>							
 	</div>
+</section>
+											
+<section id="sign-up" class="section">
+	<div class='container'>						
+		<div id='get-started-info'>
+			<p>To get started	please create an account and submit information regarding the institution. This will allow you to view more information about the services that Academic Dashboards has to offer.									
+		</div>										
+		<%= render 'layouts/sign_up' %>		
+	</div>				
 </section>
 
