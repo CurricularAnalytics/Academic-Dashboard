@@ -17,6 +17,9 @@
 			
 			<nav id="static-nav">
 				<%= link_to 'About' %>
+				<%= link_to 'News' %>
+				<%= link_to 'Contact us' %>
+				<%= link_to 'Success Stories' %>
 				<%= link_to 'Services' %>
 				<% if user_signed_in? %>
 					<%= link_to 'Sign Out', 'users/sign_out', method: :delete %>
@@ -32,6 +35,8 @@
 	<%= yield %>
 
 	<footer>
+								Privacy Policy Legal Disclaimer Terms of Use
+								© 2014 Academic Dashboards. All Rights Reserved
 	</footer>
 
 </body>
