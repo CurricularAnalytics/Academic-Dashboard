@@ -3,44 +3,43 @@
 		<h1>Data-driven Decision Making</h1>
 		<p>Colleges and universities are under increasing pressure to achieve their institutional goals in the face of higher expectations and limited resources. The  higher education decision-making environment is highly complex, and the decisions you make affect the lives of students, faculty and staff. To learn how Academic Dashboards can assist you in making data-driven decisions, click the Get Started link below.</p>
 		<div id='get-started-link'>Get Started</div>
-		
-			<br /><br /><br />
-				<i>"We are drowning in information and starving for knowledge."</i><br />
-				&mdash; Rutherford D. Roger
+		<div id="home-quote">
+			<i>"We are drowning in information and starving for knowledge."</i><br />&mdash; Rutherford D. Roger
+		</div>
 		<!--<%= link_to 'Get Started' %>-->
 	</div>
 </section>
 
 
-<section id="some-info" class="container section">
-					
-					<h2 style='text-align:center;'>The three components of academic dashboards.</h2>
-										Secure cloud deployment, no IT infrastructure required.
-					
+<section id="some-info" class="container section">			
+	<h1>The three components of academic dashboards.</h1>
+	<h4>Secure cloud deployment, no IT infrastructure required.</h4>
+
 	<div class="column-4 info">
-		<!--<div class="circle"></div>-->
+		<div class="circle"><%= image_tag 'database.png', width: '170px' %></div>
 		<h2>Data</h2>
 		<p>Your data is the basic building block for analytics, and analytics serves as the foundation for sound decision making. Academic Dashboards provides a highly flexible suite of tools supporting data ingestion.</p>
 	</div>
 
 	<div class="column-4 info">
-		<!--<div class="circle"></div>-->
+		<div class="circle"><%= image_tag 'analytics.png', width: '170px' %></div>
 		<h2>Analytics</h2>
 		<p>Analytics are cool.</p>
 	</div>
 
 	<div class="column-4 info">
-		<!--<div class="circle"></div>-->
+		<div class="circle"><%= image_tag 'visualization.png', width: '170px' %></div>
 		<h2>Visualization</h2>
 		<p>The human brain is better able to process information when it is in the form of a picture rather than words and numbers. With Academic Dashboards you can create stunning dashboards that provide relavent insights. </p>
 	</div>
 </section>
 
+
 <section id="some-graph" class="section">
 	<div class="container">
 		<div class="column-5">
 			<!--<iframe height = '250px' width = '300px' src='http://oias1.unm.edu:4567/charts/grad'></iframe>-->						
-			<%= image_tag "graph1.png", height: "250px" %>
+			<%= image_tag "graph1.png", width: '90%' %>
 		</div>
 		<div class="column-7">
 			<h2><u>Dashboards without Headaches</u></h2>
@@ -49,13 +48,17 @@
 		</div>							
 	</div>
 </section>
-											
-<section id="sign-up" class="section">
-	<div class='container'>						
-		<div id='get-started-info'>
-			<p>To get started	please create an account and submit information regarding the institution. This will allow you to view more information about the services that Academic Dashboards has to offer.									
-		</div>										
-		<%= render 'layouts/sign_up' %>		
-	</div>				
+			
+							
+<section id="sign-up">
+	<div id="sign-up-close"><i class="fa fa-times"></i></div>					
+	
+	<div id='get-started-info'>
+		<h1>Sign Up</h1>
+		<p>To get started	please create an account and submit information regarding the institution. This will allow you to view more information about the services that Academic Dashboards has to offer.									
+	</div>										
+	<%= render 'layouts/sign_up' %>					
 </section>
 
+
+<div id="screen"></div>

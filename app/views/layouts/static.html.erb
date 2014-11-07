@@ -4,9 +4,11 @@
 	<title>AcademicDashboards</title>
 	<%= stylesheet_link_tag    'application', media: 'all' %>
 	<%= javascript_include_tag 'application' %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<%= csrf_meta_tags %>
 </head>
 <body>
@@ -16,6 +18,9 @@
 			<div id="logo">Academic Dashboards</div>
 			
 			<nav id="static-nav">
+				<%= render 'layouts/nav' %>
+				<a id="nav-trigger"><i class="fa fa-bars"></i></a>
+				<!--
 				<%= link_to 'About' %>
 				<%= link_to 'News' %>
 				<%= link_to 'Contact us' %>
@@ -24,19 +29,23 @@
 				<% if user_signed_in? %>
 					<%= link_to 'Sign Out', 'users/sign_out', method: :delete %>
 				<% else %>
-					<!--<%= link_to 'Sign Up', 'users/sign_up' %>-->
 					<span id='sign-in-link'>Sign In</span>			
 					<%= render 'layouts/sign_in' %>			
 				<% end %>
+				-->
 			</nav>
 		</div>
 	</header>
 
+	<nav id="slideout">
+		<%= render 'layouts/nav' %>
+	</nav>
+	<div id="nav-screen"></div>
+
 	<%= yield %>
 
 	<footer>
-								Privacy Policy Legal Disclaimer Terms of Use
-								© 2014 Academic Dashboards. All Rights Reserved
+		Privacy Policy Legal Disclaimer Terms of Use <br /> © 2014 Academic Dashboards. All Rights Reserved
 	</footer>
 
 </body>

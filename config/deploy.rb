@@ -16,7 +16,8 @@ set :default_env, {
 	'rvm_bin_path' => '~/.rvm/bin',
 	'PATH' => "/home/ubuntu/.rvm/gems/ruby-2.1.4/bin:/home/ubuntu/.rvm/gems/ruby-2.1.4@global/bin:/home/ubuntu/.rvm/rubies/ruby-2.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ubuntu/.rvm/bin:/home/ubuntu/.rvm/bin",
 	'GEM_PATH' => "/home/ubuntu/.rvm/gems/ruby-2.1.4:/home/ubuntu/.rvm/gems/ruby-2.1.4@global",
-	'GEM_HOME' => "/home/ubuntu/.rvm/gems/ruby-2.1.4"
+	'GEM_HOME' => "/home/ubuntu/.rvm/gems/ruby-2.1.4",
+	'SECRET_KEY_BASE' => '35e5352b7431887d7707cbc912848abe4566c3ca124b8f654f30ccad999114dd022c6026d79479cfadc769b459ea285c96ddaeb314c9f863aa543c3a0d6d68ff'
 }
 
 set :pty, true
@@ -25,19 +26,16 @@ set :format, :pretty
 
 set :rails_env, :production
 
-#set :default_run_options, {'shell' => 'bash'}
-#set default_run_options[:shell] = '/bin/bash'
 set :default_shell, '/bin/bash'
 
 
 task :restart do
 	on roles(:app) do
-		#execute "source /home/ubuntu/.bashrc"
-		#execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
-		#execute "source /home/ubuntu/.bashrc; cd /home/ubuntu/apps/current; bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
-		#execute "cd /home/ubuntu/apps/current; bundle exec unicorn_rails -c config/unicorn.rb -E production -D"
-		#execute "cd /home/ubuntu/apps/current; /home/ubuntu/.rvm/rubies/ruby-2.1.4/bin/ruby test.rb"
-		#execute "printenv"
-		invoke 'unicorn:restart'
+		execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
+		within "/home/ubuntu/apps/current" do
+			with rails_env: fetch(:rails_env) do
+				execute :bundle, "exec unicorn_rails", "-c", "config/unicorn.rb", "-E", "production", "-D"
+			end
+		end
 	end
 end

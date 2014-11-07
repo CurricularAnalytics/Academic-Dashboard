@@ -1,4 +1,5 @@
-var header_height = 80
+var header_height = 80;
+
 $(document).ready(function(){ 
 	var sign_in_form = $('#sign-in-form'),
 			sign_in_link = $('#sign-in-link');
@@ -23,13 +24,19 @@ $(document).ready(function(){
 		})
 	});
 	
-	
-	$('#get-started-link').click(function(){
-		$('html,body').animate({
-		          scrollTop: $('.section#sign-up').position().top - header_height
-		        }, 500);
-	})
-	
 	// $(document).scrollTop($('#sign-up-errors').position().top-header_height-40 )
-		
+
+
+	// Sign Up Modal
+	$('#get-started-link').click( function() {
+		$('body').css('overflow', 'hidden');
+		$('#screen').show();
+		$('#sign-up').show();
+	});
+
+	$('#sign-up-close').click( function() {
+		$('body').css('overflow', 'scroll');
+		$('#screen').hide();
+		$('#sign-up').hide();
+	});
 });		
