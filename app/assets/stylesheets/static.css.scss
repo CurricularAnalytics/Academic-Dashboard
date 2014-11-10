@@ -107,6 +107,31 @@
 	}
 }
 
+#institution-name-autofill-list{
+	width:100%;
+//	min-height:50px;
+	max-height:200px;
+	overflow:scroll;
+	background:$green;		
+	position:absolute;
+	bottom:45px;
+	left:0;
+	padding:0px;
+	li{
+		list-style:none;
+		color:white;
+		font-size: 14px;
+		font-weight: bold;
+    padding:3px 10px;
+		cursor:pointer;
+	}
+	li:hover{
+		background:$lighter-green;
+	};
+}
+#institution-name-field{
+	position:relative;
+}
 
 #carousel {
 	width: 100%;

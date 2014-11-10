@@ -22,6 +22,8 @@ gem 'bourbon'
 
 gem 'neat'
 
+gem 'countries'
+
 group :development do 
 	# For Deploying
 	gem 'capistrano'

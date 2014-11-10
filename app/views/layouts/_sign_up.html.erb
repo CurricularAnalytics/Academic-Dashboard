@@ -25,10 +25,11 @@
 		<h3>Institution Information</h3>
 
 		<%= fields_for :institution do |i| %>
-			<div class="container">
-				<div class="long-field column-6">
+			<div class="container">			
+				<!--<%= select("state","code",Country.find_country_by_name('united states').states.map{|s| [s[1]['name'],s.first]}) %>--> 
+				<div id='institution-name-field' class="long-field column-6">
 					<%= i.label :name %>
-					<%= i.text_field :name %>
+					<%= i.text_field :name, autocomplete: "off"%>
 				</div>
 
 				<!--
@@ -57,7 +58,7 @@
 					<%= i.text_field :zip %>
 				</div>
 				-->
-
+				
 				<div class="long-field column-6">
 					<%= i.label :phone %>
 					<%= i.text_field :phone %>
