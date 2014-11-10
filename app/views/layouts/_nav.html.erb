@@ -5,5 +5,14 @@
 	<li><%= link_to 'Contact us' %></li>
 	<li><%= link_to 'Success Stories' %></li>
 	<li><%= link_to 'Services' %></li>
+	<li>
+		<% if user_signed_in? %>
+			<%= link_to 'Sign Out', 'users/sign_out', method: :delete %>
+		<% else %>
+			<span class='sign-in-link'>Sign In</span>				
+		<% end %>
+	</li>
 
 </ul>
+				
+<!-- <%= render 'layouts/sign_in' %>	-->

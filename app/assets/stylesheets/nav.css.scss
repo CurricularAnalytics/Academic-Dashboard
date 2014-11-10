@@ -37,7 +37,7 @@ nav ul {
 		}
 	}
 
-	li a {
+	li a,li .sign-in-link {
 		display: block;
 		margin: 0;
 		padding: 20px 20px;
@@ -50,7 +50,9 @@ nav ul {
 			color: white;
 		}
 	}
-
+	li .sign-in-link{
+		cursor:pointer;
+	}
 	&.is-visible {
 		@include transform(translateX(0));
 	}

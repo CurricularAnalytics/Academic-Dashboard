@@ -35,7 +35,7 @@ footer {
 }
 
 
-#sign-up {
+#sign-up,#sign-in {
 	width: 65%;
 	max-height: 100%;
 	margin-left: 17.5%;
@@ -59,7 +59,7 @@ footer {
 	}
 
 
-	#sign-up-close {
+	#sign-up-close,#sign-in-close {
 		position: absolute;
 		right: 15px;
 		top: 15px;
@@ -81,7 +81,7 @@ footer {
 }
 
 
-#register {
+#register,#sign-in-form {
 	padding: 30px;
 
 	h2,
@@ -110,7 +110,7 @@ footer {
 		}
 	}
 
-	#sign-up-button {
+	#sign-up-button,#sign-in-button {
 		padding: 10px 20px;
 		margin: auto;
 		display: block;
