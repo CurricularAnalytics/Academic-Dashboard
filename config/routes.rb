@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 	root 'static#home'
+	get '/services' => 'static#services'
 
 	resources :institutions
 
