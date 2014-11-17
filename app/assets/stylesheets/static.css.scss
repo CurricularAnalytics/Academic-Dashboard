@@ -13,7 +13,11 @@
 	float: left;
 	margin-top: 20px;
 
-	color: $green;
+	a {
+		color: $green;
+		&:hover {opacity: 0.5;}
+	}
+	
 	font-size: 24px;
 	font-family: $heading;
 	text-transform: uppercase;
