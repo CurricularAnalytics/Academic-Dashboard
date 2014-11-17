@@ -181,6 +181,7 @@
 		text-transform: uppercase;
 		text-align: center;
 		color: $purple;
+		margin-bottom: 50px;
 
 		@include media($mobile) {
 			font-size: 24px;
