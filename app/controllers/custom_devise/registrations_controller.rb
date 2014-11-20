@@ -3,18 +3,16 @@ class CustomDevise::RegistrationsController < Devise::RegistrationsController
 	
 
 	def create
-
 		# super
-    build_resource(sign_up_params)
+    		build_resource(sign_up_params)
 		if resource.save
-      set_flash_message :notice, :signed_up
+     		set_flash_message :notice, :signed_up
 			@institution = Institution.new(institution_params)
 			@institution.save!
-    else
-      clean_up_passwords(resource)
-      render 'static/home', :anchor => "sign_up"
-    end
-
+   		 else
+			clean_up_passwords(resource)
+			render 'static/home', :anchor => "sign_up"
+    		end
 	end
 
 	
@@ -24,6 +22,10 @@ class CustomDevise::RegistrationsController < Devise::RegistrationsController
 
 
 private
+	def sign_up_params
+		params.require(:user).permit(:name, :phone, :email, :title, :password, :password_confirmation)
+	end
+
 	def institution_params
 		params.require(:institution).permit(:name, :code, :street, :address, :city, :zip, :phone)
 	end

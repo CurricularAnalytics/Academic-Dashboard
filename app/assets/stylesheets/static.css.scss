@@ -258,12 +258,17 @@
 	}
 
 	h2 {
-		margin-top: 50px;
-		font-size: 36px;
+		@include media($mobile) {
+			margin-top: 50px;
+		}
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 16px;
 	}
 
 	p {
 		font-family: $serif;
-		font-size: 20px;
 	}
 }
