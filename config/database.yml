@@ -22,8 +22,9 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   database: academicdash
+  host: localhost
   pool: 5
   username: postgres
   password: drakeUNM
