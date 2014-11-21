@@ -25,5 +25,5 @@ production:
   encoding: unicode
   database: academicdash
   pool: 5
-  username: postgresql
+  username: postgres
   password: drakeUNM
