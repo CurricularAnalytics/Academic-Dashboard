@@ -9,6 +9,7 @@ class CustomDevise::RegistrationsController < Devise::RegistrationsController
      		set_flash_message :notice, :signed_up
 			@institution = Institution.new(institution_params)
 			@institution.save!
+			render 'static/home'
    		 else
 			clean_up_passwords(resource)
 			render 'static/home', :anchor => "sign_up"
