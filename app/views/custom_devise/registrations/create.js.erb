@@ -1,0 +1,7 @@
+<% if @success %>
+	$("#sign-up h1").html("Thank You");
+	$("#sign-up p").remove();
+	$("#sign-up #register").html("<p>Thank you for your interest in Academic Dashboards. We will contact you soon to get you started on our platform.</p>");
+<% else %>
+	alert("Error");
+<% end %>

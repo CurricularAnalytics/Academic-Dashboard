@@ -28,7 +28,6 @@ set :rails_env, :production
 
 set :default_shell, '/bin/bash'
 
-
 task :restart do
 	on roles(:app) do
 		execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
