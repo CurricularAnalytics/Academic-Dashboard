@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sankey: false
+  degree_mapping: false
+  analytic_dashboards: false
+  datamart: false
+  custom_dashboards: false
+
+two:
+  sankey: false
+  degree_mapping: false
+  analytic_dashboards: false
+  datamart: false
+  custom_dashboards: false

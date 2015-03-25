@@ -19,7 +19,7 @@ $(document).ready(function(){
 	
 
 	// Sign Up Modal
-	$('#get-started-link').click( function() {
+	$('.get-started').click( function() {
 		$('body').css('overflow', 'hidden');
 		$('#screen').show();
 		$('#sign-up').show();
