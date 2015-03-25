@@ -1,0 +1,864 @@
+/* line 2, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 59, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 66, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 71, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+/* line 15, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-3:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-4:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-5 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-5:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-6 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-6:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-7 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-7:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-8 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-8:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-9 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-9:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-10 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-10:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-11 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-11:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 78, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .column-12 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .column-12:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-1 {
+    margin-left: 8.5298%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-2 {
+    margin-left: 17.05961%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-3 {
+    margin-left: 25.58941%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-4 {
+    margin-left: 34.11922%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-5 {
+    margin-left: 42.64902%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/definitions.css.scss */
+  .shift-6 {
+    margin-left: 51.17883%;
+  }
+}
+
+/* line 1, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+html {
+  width: 100%;
+}
+
+/* line 6, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 16, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+footer {
+  color: white;
+  width: 100%;
+  height: 200px;
+  background-color: #333333;
+}
+
+/* line 25, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/* line 38, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#sign-up, #sign-in {
+  width: 65%;
+  max-height: 80%;
+  margin-left: 17.5%;
+  position: fixed;
+  overflow: scroll;
+  z-index: 100;
+  top: 60px;
+  background-color: white;
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  /* line 38, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+  #sign-up, #sign-in {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+  }
+}
+/* line 57, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#sign-up h1, #sign-in h1 {
+  text-align: center;
+}
+/* line 62, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#sign-up #sign-up-close, #sign-up #sign-in-close, #sign-in #sign-up-close, #sign-in #sign-in-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  color: white;
+}
+/* line 69, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#sign-up #sign-up-close:hover, #sign-up #sign-in-close:hover, #sign-in #sign-up-close:hover, #sign-in #sign-in-close:hover {
+  opacity: 0.5;
+}
+
+/* line 74, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#get-started-info {
+  padding: 30px;
+  background-color: #6e9796;
+  color: white;
+  font-family: "Arvo", serif;
+  text-align: center;
+}
+
+/* line 84, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register, #sign-in-form {
+  padding: 30px;
+}
+/* line 88, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register h2,
+#register h3, #sign-in-form h2,
+#sign-in-form h3 {
+  font-family: "Oswald", sans-serif;
+  color: #6b5475;
+  text-align: center;
+  margin: 10px;
+}
+/* line 95, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register form, #sign-in-form form {
+  background-color: white;
+}
+/* line 98, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register form .container, #sign-in-form form .container {
+  padding: 0;
+}
+/* line 100, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register form input[type="email"], #register form input[type="number"], #register form input[type="password"], #register form input[type="search"], #register form input[type="tel"], #register form input[type="text"], #register form input[type="url"], #register form input[type="color"], #register form input[type="date"], #register form input[type="datetime"], #register form input[type="datetime-local"], #register form input[type="month"], #register form input[type="time"], #register form input[type="week"], #sign-in-form form input[type="email"], #sign-in-form form input[type="number"], #sign-in-form form input[type="password"], #sign-in-form form input[type="search"], #sign-in-form form input[type="tel"], #sign-in-form form input[type="text"], #sign-in-form form input[type="url"], #sign-in-form form input[type="color"], #sign-in-form form input[type="date"], #sign-in-form form input[type="datetime"], #sign-in-form form input[type="datetime-local"], #sign-in-form form input[type="month"], #sign-in-form form input[type="time"], #sign-in-form form input[type="week"] {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  border: 2px solid #dddddd;
+}
+/* line 109, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register form input[type="email"]:focus, #register form input[type="number"]:focus, #register form input[type="password"]:focus, #register form input[type="search"]:focus, #register form input[type="tel"]:focus, #register form input[type="text"]:focus, #register form input[type="url"]:focus, #register form input[type="color"]:focus, #register form input[type="date"]:focus, #register form input[type="datetime"]:focus, #register form input[type="datetime-local"]:focus, #register form input[type="month"]:focus, #register form input[type="time"]:focus, #register form input[type="week"]:focus, #sign-in-form form input[type="email"]:focus, #sign-in-form form input[type="number"]:focus, #sign-in-form form input[type="password"]:focus, #sign-in-form form input[type="search"]:focus, #sign-in-form form input[type="tel"]:focus, #sign-in-form form input[type="text"]:focus, #sign-in-form form input[type="url"]:focus, #sign-in-form form input[type="color"]:focus, #sign-in-form form input[type="date"]:focus, #sign-in-form form input[type="datetime"]:focus, #sign-in-form form input[type="datetime-local"]:focus, #sign-in-form form input[type="month"]:focus, #sign-in-form form input[type="time"]:focus, #sign-in-form form input[type="week"]:focus {
+  outline: none;
+  border: 2px solid #6e9796;
+}
+/* line 113, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register p, #sign-in-form p {
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-size: 16px;
+}
+/* line 119, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register #sign-up-button, #register #sign-in-button, #sign-in-form #sign-up-button, #sign-in-form #sign-in-button {
+  padding: 10px 20px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  border: 2px solid #6b5475;
+  color: #6b5475;
+  font-family: "Arvo", serif;
+  font-size: 14px;
+  background-color: white;
+}
+/* line 131, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register #sign-up-button:hover, #register #sign-in-button:hover, #sign-in-form #sign-up-button:hover, #sign-in-form #sign-in-button:hover {
+  color: white;
+  background-color: #6b5475;
+}
+/* line 137, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+#register .interest-box, #sign-in-form .interest-box {
+  color: #444;
+  font-size: 12px;
+}
+@media screen and (min-width: 769px) {
+  /* line 137, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+  #register .interest-box, #sign-in-form .interest-box {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 38, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  #register .interest-box:last-child, #sign-in-form .interest-box:last-child {
+    margin-right: 0;
+  }
+  /* line 52, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+  #register .interest-box:nth-child(2n), #sign-in-form .interest-box:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 57, /Users/Michael/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+  #register .interest-box:nth-child(2n+1), #sign-in-form .interest-box:nth-child(2n+1) {
+    clear: left;
+  }
+}
+
+/* line 149, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+footer {
+  text-align: center;
+}
+/* line 150, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+footer h3 {
+  padding-top: 40px;
+  color: #555;
+}
+/* line 155, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/layout.css.scss */
+footer span {
+  color: #555;
+  font-size: 12px;
+}
+
+/* line 1, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: #333333;
+}
+
+/* line 12, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#logo {
+  float: left;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+/* line 16, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#logo a {
+  color: #6e9796;
+}
+/* line 18, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#logo a:hover {
+  opacity: 0.5;
+}
+
+/* line 27, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-nav {
+  float: right;
+  margin-top: 28px;
+}
+/* line 31, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-nav ul {
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  /* line 31, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #static-nav ul {
+    display: none;
+  }
+}
+/* line 38, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-nav li {
+  display: inline;
+}
+/* line 42, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-nav a, #static-nav .sign-in-link {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 20px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+/* line 54, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#static-nav a:hover, #static-nav .sign-in-link:hover {
+  color: #a9c2c1;
+}
+@media screen and (min-width: 500px) {
+  /* line 59, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #static-nav #nav-trigger {
+    display: none;
+  }
+}
+
+/* line 66, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#institution-name-autofill-list {
+  width: 100%;
+  max-height: 200px;
+  overflow: scroll;
+  background: #6e9796;
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  padding: 0px;
+}
+/* line 76, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#institution-name-autofill-list li {
+  list-style: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+/* line 84, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#institution-name-autofill-list li:hover {
+  background: #a9c2c1;
+}
+
+/* line 88, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#institution-name-field {
+  position: relative;
+}
+
+/* line 92, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel {
+  width: 100%;
+  margin-top: 80px;
+  background: url(/images/graduates.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: #6b5475;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+/* line 104, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 120, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-family: "Arvo", serif;
+}
+/* line 127, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel-content h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+}
+@media screen and (max-width: 500px) {
+  /* line 127, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #carousel-content h1 {
+    font-size: 24px;
+  }
+}
+/* line 136, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel-content p {
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  /* line 136, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #carousel-content p {
+    font-size: 14px;
+  }
+}
+/* line 145, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel-content a,
+#carousel-content #get-started-link {
+  cursor: pointer;
+  margin-top: 50px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border: 2px solid white;
+}
+/* line 156, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#carousel-content a:hover,
+#carousel-content #get-started-link:hover {
+  background-color: white;
+  color: #6b5475;
+}
+
+/* line 164, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#home-quote {
+  margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  /* line 164, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #home-quote {
+    font-size: 12px;
+  }
+}
+
+/* line 173, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+.section {
+  padding: 100px 0px;
+}
+@media screen and (max-width: 500px) {
+  /* line 173, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  .section {
+    padding: 100px 20px;
+  }
+}
+
+/* line 183, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#some-info h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6b5475;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  /* line 183, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #some-info h1 {
+    font-size: 24px;
+  }
+}
+/* line 195, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#some-info h4 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "Arvo", serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: normal;
+}
+@media screen and (max-width: 500px) {
+  /* line 195, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #some-info h4 {
+    font-size: 16px;
+  }
+}
+/* line 208, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#some-info .circle {
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+/* line 220, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+.info {
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  /* line 220, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  .info {
+    margin-top: 50px;
+  }
+}
+/* line 227, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+.info h2 {
+  color: #6e9796;
+}
+/* line 231, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+.info p {
+  font-family: "Arvo", serif;
+  color: #333333;
+}
+
+/* line 238, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph {
+  background-color: #6e9796;
+  color: white;
+}
+/* line 247, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph iframe {
+  border: none;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+/* line 255, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph img {
+  display: block;
+  margin: auto;
+}
+/* line 260, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph h2 {
+  font-size: 24px;
+}
+@media screen and (max-width: 500px) {
+  /* line 260, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+  #sample-graph h2 {
+    margin-top: 50px;
+  }
+}
+/* line 267, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph h4 {
+  font-size: 16px;
+}
+/* line 271, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/static.css.scss */
+#sample-graph p {
+  font-family: "Arvo", serif;
+}
+
+/* line 1, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#nav-trigger {
+  margin-top: -7px;
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* line 9, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 15, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout {
+  width: 220px;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0px;
+  right: auto;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transform: translateX(-220px);
+  -moz-transform: translateX(-220px);
+  -ms-transform: translateX(-220px);
+  -o-transform: translateX(-220px);
+  transform: translateX(-220px);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  background-color: #333333;
+  z-index: 500;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 29, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout li:active {
+  background-color: #6e9796;
+  color: white;
+}
+/* line 34, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout li:hover {
+  background-color: #6e9796;
+  color: white;
+}
+/* line 40, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout li a, #slideout li .sign-in-link {
+  display: block;
+  margin: 0;
+  padding: 20px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 49, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout li a:hover, #slideout li .sign-in-link:hover {
+  color: white;
+}
+/* line 53, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout li .sign-in-link {
+  cursor: pointer;
+}
+/* line 56, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#slideout.is-visible {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 62, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#nav-screen {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background-color: black;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 400;
+}
+/* line 70, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/nav.css.scss */
+#nav-screen.is-visible {
+  opacity: 0.6;
+  visibility: visible;
+}
+
+/* line 1, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+#service-nav {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #CCC;
+  text-align: center;
+}
+/* line 13, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+#service-nav h1 {
+  margin-bottom: 20px;
+}
+/* line 17, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+#service-nav a {
+  margin: 0px 10px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 23, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+#service-nav a:hover {
+  opacity: 0.5;
+}
+
+/* line 30, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-section {
+  text-align: center;
+  display: none;
+}
+/* line 34, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-section h2 {
+  color: #6e9796;
+}
+/* line 38, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-section p {
+  font-family: "Arvo", serif;
+  color: #333333;
+  margin-bottom: 40px;
+}
+/* line 44, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-section a {
+  color: #6b5475;
+  padding: 10px 20px;
+  border: 2px solid #6b5475;
+}
+/* line 49, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-section a:hover {
+  color: white;
+  background-color: #6b5475;
+}
+
+/* line 57, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.active-service {
+  display: block;
+}
+
+/* line 62, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-image {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+/* line 69, /Users/Michael/Documents/Projects/AcademicDashboards/app/assets/stylesheets/services.css.scss */
+.service-image img {
+  position: relative;
+  bottom: -5px;
+}
