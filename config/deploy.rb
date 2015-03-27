@@ -30,7 +30,7 @@ set :default_shell, '/bin/bash'
 
 task :restart do
 	on roles(:app) do
-		#execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
+		execute "kill -QUIT `cat /home/ubuntu/unicorn/unicorn.pid`"
 		within "/home/ubuntu/apps/current" do
 			with rails_env: fetch(:rails_env) do
 				execute :bundle, "exec unicorn_rails", "-c", "config/unicorn.rb", "-E", "production", "-D"

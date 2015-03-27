@@ -1,3 +1,38 @@
+#services {
+
+	text-align: center;
+
+	img {
+		margin-bottom: 40px;
+	}
+
+
+	h1,
+	h2 {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 32px;
+		padding: 20px;
+		color: $green;
+	}
+
+	p {
+		font-family: $serif;
+		line-height: 2;
+	}
+}
+
+
+#custom-dashboards {
+	@include media($mobile) {
+		margin-top: 40px;
+	}
+}
+
+
+
 #service-nav {
 	width: 100%;
 	max-width: 1000px;

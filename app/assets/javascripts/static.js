@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.slider').glide({
-		autoplay: false,
+		autoplay: 4000,
 		navigation: "#slide-nav",
 		arrows: '#product-carousel',
 		arrowRightText: '<i class="fa fa-angle-right"></i>',

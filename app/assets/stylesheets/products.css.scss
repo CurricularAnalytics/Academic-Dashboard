@@ -5,6 +5,11 @@
 	a {
 		margin: 0 10px;
 	}
+
+	h1 {
+		color: $green;
+		font-size: 32px;
+	}
 }
 
 #products-nav {
@@ -16,10 +21,6 @@
 	//border-bottom: 1px solid #CCC;
 
 	text-align: center;
-
-	h1 {
-		margin-bottom: 20px;
-	}
 
 	a {
 		margin: 0px 10px;
