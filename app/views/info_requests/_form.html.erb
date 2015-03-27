@@ -1,0 +1,82 @@
+<section id="info-request">
+	<div id="request-close"><i class="fa fa-times"></i></div>         
+	
+	<div id='get-started-info'>
+		<h1>Information Request</h1>
+		<p>To get started using our products and services, please provide the information listed below and you will be contacted shortly.</p>
+	</div>                    
+	
+	<div id="info-request-form">
+		<%= form_for(@info_request) do |f| %>
+			<ul id='sign-up-errors'>
+				<% resource.errors.full_messages.each do |e| %>
+					<li><%= e %></li>
+				<% end %>
+			</ul>
+
+			<div class='container'>
+				<div class='short-field column-6'>
+					<%= f.label :name %>
+					<%= f.text_field :name %>
+				</div>
+
+				<div class='short-field column-6'>
+					<%= f.label :title %>
+					<%= f.text_field :title %>
+				</div>
+			</div>
+
+			<div class='container'>
+				<div class='short-field column-6'>
+					<%= f.label :email %>
+					<%= f.text_field :email %>
+				</div>
+
+				<div class='short-field column-6'>
+					<%= f.label :phone %>
+					<%= f.text_field :phone %>
+				</div>
+			</div>
+
+			<%= fields_for :institution do |i| %>
+				<div id='institution-name-field' class="long-field">
+					<%= f.label 'Institution' %>
+					<%= f.text_field :institution, autocomplete: "off"%>
+				</div>
+			<% end %>
+
+			Which products and services are you interested in?
+			<div class='container'>
+				<div class="interest-box">
+					<label>Student Flow Sankey Diagrams</label>
+					<%= f.check_box :sankey %>
+				</div>
+
+				<div class="interest-box">
+					<label>Degree Mapping and Student Tracking</label>
+					<%= f.check_box :degree_mapping %>
+				</div>
+
+				<div class="interest-box">
+					<label>Analytic Dashboards</label>
+					<%= f.check_box :analytic_dashboards %>
+				</div>
+
+				<div class="interest-box">
+					<label>Datamarts</label>
+					<%= f.check_box :datamart %>
+				</div>
+
+				<div class="interest-box">
+					<label>Custom Dashboards</label>
+					<%= f.check_box :custom_dashboards %>
+				</div>
+			</div>
+
+			<br>
+
+			<%= f.submit "SUBMIT REQUEST", id: 'request-button' %>
+		<% end %>
+	</div>
+
+</section>

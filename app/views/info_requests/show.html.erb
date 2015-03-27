@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @info_request.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @info_request.email %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @info_request.institution %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @info_request.title %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @info_request.phone %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @info_request.comments %>
+</p>
+
+<p>
+  <strong>Sankey:</strong>
+  <%= @info_request.sankey %>
+</p>
+
+<p>
+  <strong>Degree mapping:</strong>
+  <%= @info_request.degree_mapping %>
+</p>
+
+<p>
+  <strong>Analytic dashboards:</strong>
+  <%= @info_request.analytic_dashboards %>
+</p>
+
+<p>
+  <strong>Datamart:</strong>
+  <%= @info_request.datamart %>
+</p>
+
+<p>
+  <strong>Custom dashboards:</strong>
+  <%= @info_request.custom_dashboards %>
+</p>
+
+<%= link_to 'Edit', edit_info_request_path(@info_request) %> |
+<%= link_to 'Back', info_requests_path %>

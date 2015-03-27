@@ -1,86 +1,86 @@
-<div id="register">
-	<%= form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true) do |f| %>
-		<ul id='sign-up-errors'>
-			<% resource.errors.full_messages.each do |e| %>
-				<li><%= e %></li>
+<div id="info-request">
+		<%= form_for(@inforequest) do |f| %>
+			<ul id='sign-up-errors'>
+				<% resource.errors.full_messages.each do |e| %>
+					<li><%= e %></li>
+				<% end %>
+			</ul>
+
+			<div class='container'>
+				<div class='short-field column-6'>
+					<%= f.label :name %>
+					<%= f.text_field :name %>
+				</div>
+
+				<div class='short-field column-6'>
+					<%= f.label :title %>
+					<%= f.text_field :title %>
+				</div>
+			</div>
+
+			<div class='container'>
+				<div class='short-field column-6'>
+					<%= f.label :email %>
+					<%= f.text_field :email %>
+				</div>
+
+				<div class='short-field column-6'>
+					<%= f.label :phone %>
+					<%= f.text_field :phone %>
+				</div>
+			</div>
+
+			<%= fields_for :institution do |i| %>
+				<div id='institution-name-field' class="long-field">
+					<%= f.label 'Institution' %>
+					<%= f.text_field :institution, autocomplete: "off"%>
+				</div>
 			<% end %>
-		</ul>
 
-		<div class='container'>
-			<div class='short-field column-6'>
-				<%= f.label :name %>
-				<%= f.text_field :name %>
+			Which services are you interested in?
+			<div class='container'>
+				<div class="interest-box">
+					<label>Student Flow Sankey Diagrams</label>
+					<%= f.check_box :sankey %>
+				</div>
+
+				<div class="interest-box">
+					<label>Degree Mapping and Student Tracking</label>
+					<%= f.check_box :degree_mapping %>
+				</div>
+
+				<div class="interest-box">
+					<label>Analytic Dashboards</label>
+					<%= f.check_box :analytic_dashboards %>
+				</div>
+
+				<div class="interest-box">
+					<label>Datamarts</label>
+					<%= f.check_box :datamart %>
+				</div>
+
+				<div class="interest-box">
+					<label>Custom Dashboards</label>
+					<%= f.check_box :custom_dashboards %>
+				</div>
 			</div>
 
-			<div class='short-field column-6'>
-				<%= f.label :title %>
-				<%= f.text_field :title %>
-			</div>
-		</div>
+			<!--
+			<div class='container'>
+				<div class='short-field column-6'>
+					<%= f.label :password %>
+					<%= f.password_field :password, autocomplete: "off" %>
+				</div>
 
-		<div class='container'>
-			<div class='short-field column-6'>
-				<%= f.label :email %>
-				<%= f.text_field :email %>
+				<div class='short-field column-6'>
+					<%= f.label :password_confirmation %>
+					<%= f.password_field :password_confirmation, autocomplete: "off" %>
+				</div>
 			</div>
+			-->
 
-			<div class='short-field column-6'>
-				<%= f.label :phone %>
-				<%= f.text_field :phone %>
-			</div>
-		</div>
+			<br>
 
-		Which services are you interested in?
-		<div class='container'>
-			<div class="interest-box">
-				<label>Student Flow Sankey Diagrams</label>
-				<%= check_box :interest, :sankey %>
-			</div>
-
-			<div class="interest-box">
-				<label>Degree Mapping and Student Tracking</label>
-				<%= check_box :interest, :degree_mapping %>
-			</div>
-
-			<div class="interest-box">
-				<label>Analytic Dashboards</label>
-				<%= check_box :interest, :analytic_dashboards %>
-			</div>
-
-			<div class="interest-box">
-				<label>Datamarts</label>
-				<%= check_box :interest, :datamart %>
-			</div>
-
-			<div class="interest-box">
-				<label>Custom Dashboards</label>
-				<%= check_box :interest, :custom_dashboards %>
-			</div>
-		</div>
-
-		<!--
-		<div class='container'>
-			<div class='short-field column-6'>
-				<%= f.label :password %>
-				<%= f.password_field :password, autocomplete: "off" %>
-			</div>
-
-			<div class='short-field column-6'>
-				<%= f.label :password_confirmation %>
-				<%= f.password_field :password_confirmation, autocomplete: "off" %>
-			</div>
-		</div>
-		-->
-
-		<br>
-
-		<%= fields_for :institution do |i| %>
-			<div id='institution-name-field' class="long-field">
-				<%= i.label 'Institution Name' %>
-				<%= i.text_field :name, autocomplete: "off"%>
-			</div>
+			<%= f.submit "SIGN UP", id: 'sign-up-button' %>
 		<% end %>
-
-		<%= f.submit "SIGN UP", id: 'sign-up-button' %>
-	<% end %>
-</div>
+	</div>

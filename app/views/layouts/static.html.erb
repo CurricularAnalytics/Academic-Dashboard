@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<%= csrf_meta_tags %>
 </head>
@@ -15,7 +16,10 @@
 
 	<header id="static-header">
 		<div class="container">
-			<div id="logo"><%= link_to 'Academic Dashboards', '/' %></div>
+			<div id="logo">
+				<%= link_to image_tag('ad_logo_web.png', height: '60px'), '/' %>
+				<!--<%= link_to 'Academic Dashboards', '/' %>-->
+			</div>
 			
 			<nav id="static-nav">
 				<%= render 'layouts/nav' %>
@@ -33,7 +37,7 @@
 
 	<footer>
 		<h3>Academic Dashboards</h3>
-		<span>Privacy Policy Legal Disclaimer Terms of Use <br /> © 2014 Academic Dashboards. All Rights Reserved</span>
+		<span>© 2014 Academic Dashboards. All Rights Reserved</span>
 	</footer>
 
 </body>

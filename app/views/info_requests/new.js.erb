@@ -1,0 +1,9 @@
+var form = $("<%=j render 'form' %>");
+
+$('body').css('overflow', 'hidden');
+$('body').prepend($("<div id='screen'></div>"));
+
+$('body').prepend(form);
+
+$('#slideout').removeClass('is-visible');
+$('#nav-screen').removeClass('is-visible');

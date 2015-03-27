@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  resources :info_requests
+
 	root 'static#home'
 	get '/services' => 'static#services'
+	get '/products' => 'static#products'
+	get '/about' => 'static#about'
 
 	resources :institutions
 

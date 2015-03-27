@@ -24,6 +24,8 @@ gem 'neat'
 
 gem 'countries'
 
+gem 'd3-rails'
+
 group :development do 
 	# For Deploying
 	gem 'capistrano'

@@ -1,7 +1,11 @@
 $(document).ready(function() {
-	$("#service-nav a").click(function() {
+	$("#products-nav a").click(function() {
 		section = $(this).attr("sec");
-		$('.active-service').removeClass("active-service");
-		$('#' + section).addClass("active-service");
+		//$('.chart').html("");
+		$(window).unbind("resize");
+		$('.active-product').removeClass("active-product");
+		$('#' + section).addClass("active-product");
+		if (section == "dashboards")
+			dashboardcharts();
 	})
 });

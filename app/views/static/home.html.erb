@@ -2,7 +2,8 @@
 	<div id="carousel-content" class="container">
 		<h1>Data-driven Decision Making</h1>
 		<p>Colleges and universities are under increasing pressure to achieve their institutional goals in the face of higher expectations and limited resources. The  higher education decision-making environment is highly complex, and the decisions you make affect the lives of students, faculty and staff. To learn how Academic Dashboards can assist you in making data-driven decisions, click the Get Started link below.</p>
-		<div id='get-started-link' class="get-started">Get Started</div>
+		<!--<div id='get-started-link' class="get-started">Get Started</div>-->
+		<%= link_to "Get Started", "/info_requests/new", id: 'get-started-link', remote: true %>
 		<div id="home-quote">
 			<i>"We are drowning in information and starving for knowledge."</i><br />&mdash; Rutherford D. Roger
 		</div>
@@ -34,6 +35,7 @@
 </section>
 
 
+<!--
 <section id="sample-graph" class="section">
 	<div class="container">
 		<div class="column-7" id="sample">
@@ -46,25 +48,42 @@
 		</div>							
 	</div>
 </section>
+-->
+
+
+
+<section id="product-carousel">
+	<div class="slider">
+		<ul class="slider__wrapper">
+			<li id="slide" class="slider__item">
+				<div class="column-7">
+					<%= image_tag "sankeys/sankey1.png", width: '100%' %>
+				</div>
+				<div class="column-5">
+					<h1>Dashboards without Headaches</h1>
+					Clear and concise dashboards are the key to data-driven decision making. Academic Dashboards has created a set of dashboards tuned to the needs higher education.  These can be used to investigate and better understand the underlying factors behind various performance metrics.  These dashboards can also be used to satisfy various higher education reporting needs, and may be adapted to for your own purposes. 
+				</div>
+			</li>
 			
-							
-<section id="sign-up">
-	<div id="sign-up-close"><i class="fa fa-times"></i></div>					
-	
-	<div id='get-started-info'>
-		<h1>Sign Up</h1>
-		<p>To get started please create an account and submit information regarding your institution.</p>
-	</div>										
-	<%= render 'layouts/sign_up' %>					
+			<li class="slider__item">
+				<div class="column-7">
+					<%= image_tag "sankeys/sankey2.png", width: '100%' %>
+				</div>
+				<div class="column-5">
+					Clear and concise dashboards are the key to data-driven decision making. Academic Dashboards has created a set of dashboards tuned to the needs higher education.  These can be used to investigate and better understand the underlying factors behind various performance metrics.  These dashboards can also be used to satisfy various higher education reporting needs, and may be adapted to for your own purposes. 
+				</div>
+			</li>
+			
+			<li class="slider__item">
+				<div class="column-7">
+					<%= image_tag "sankeys/sankey3.png", width: '100%' %>
+				</div>
+				<div class="column-5">
+					Clear and concise dashboards are the key to data-driven decision making. Academic Dashboards has created a set of dashboards tuned to the needs higher education.  These can be used to investigate and better understand the underlying factors behind various performance metrics.  These dashboards can also be used to satisfy various higher education reporting needs, and may be adapted to for your own purposes. 
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div id="slide-nav"></div>
 </section>
-
-<section id="sign-in">
-	<div id="sign-in-close"><i class="fa fa-times"></i></div>					
-
-	<div id='get-started-info'>
-		<h1>Sign In</h1>
-	</div>										
-	<%= render 'layouts/sign_in' %>					
-</section>
-
-<div id="screen"></div>
