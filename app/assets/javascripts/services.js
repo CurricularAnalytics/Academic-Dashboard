@@ -7,5 +7,8 @@ $(document).ready(function() {
 		$('#' + section).addClass("active-product");
 		if (section == "dashboards")
 			dashboardcharts();
+
+		$('.active-product-link').removeClass('active-product-link');
+		$(this).addClass("active-product-link");
 	})
 });

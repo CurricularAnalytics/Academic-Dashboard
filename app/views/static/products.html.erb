@@ -1,7 +1,7 @@
 <section id="products">
 	<h1>Our Products</h1>
 	<div id="products-nav">
-		<%= link_to "Sankyes", "#", sec: "sankey" %>
+		<%= link_to "Sankyes", "#", sec: "sankey", class: "active-product-link" %>
 		<%= link_to "Degree Mapping", "#", sec: "degree-plans" %>
 		<%= link_to "Analytic Dashboards", "#", sec: "dashboards" %>
 	</div>
@@ -9,8 +9,10 @@
 
 
 <section id="sankey" class="active-product">
-	<h2>Sankey Diagrams</h2>
-	<p>A Blurb about sankeys</p>
+	<div class="product-blurb">
+		<h2>Sankey Diagrams</h2>
+		<p>A Blurb about sankeys</p>
+	</div>
 
 	<section class="product-row">
 		<div class="container">
@@ -40,7 +42,7 @@
 		</div>
 	</section>
 
-	<section id="sankey-iframe">
+	<section class="try-it">
 		<h2>Try It Below:</h2>
 		<div class="container">
 			<iframe src="http://studentflows.unm.edu" width="100%" height="600px"></iframe>
@@ -51,8 +53,10 @@
 
 
 <section id="degree-plans">
-	<h2>Degree Mapping</h2>
-	<p>A blurb about degree mapping.</p>
+	<div class="product-blurb">
+		<h2>Degree Mapping</h2>
+		<p>A blurb about degree mapping.</p>
+	</div>
 
 	<section class="product-row">
 		<div class="container">
@@ -60,7 +64,7 @@
 				<%= image_tag "degree_mapping/1.png" %>
 			</div>
 			<div class="column-4">
-				Some Caption Goes Here
+				Give students access to your degree plans in a variety of ways. Give students who know what they want quick access to their degree plans. For undecided students, give them a variety of tools to find programs that match their interests.
 			</div>
 		</div>
 	</section>
@@ -71,7 +75,7 @@
 				<%= image_tag "degree_mapping/2.png" %>
 			</div>
 			<div class="column-4">
-				Some Caption Goes Here
+				Give students a list of programs by college, interest area, and alphabetically. Allow students to compare up to three different degree plans.
 			</div>
 		</div>
 	</section>
@@ -82,7 +86,7 @@
 				<%= image_tag "degree_mapping/3.png" %>
 			</div>
 			<div class="column-4">
-				Some Caption Goes Here
+				Provide one convenient location for information on each of your programs. Give students an overview of each program, including admission requirements, and career opportunities. 
 			</div>
 		</div>
 	</section>
@@ -93,17 +97,23 @@
 				<%= image_tag "degree_mapping/4.png" %>
 			</div>
 			<div class="column-4">
-				Some Caption Goes Here
+				Give students a term-by-term view of the courses that they need to take in order to complete to obtain a degree.
 			</div>
 		</div>
+	</section>
+
+	<section class="try-it">
+		<%= link_to 'Live Preview', 'http://degrees.unm.edu/undergrad_programs/explore', target: '_blank' %>
 	</section>
 
 </section>
 
 
 <section id="dashboards">
-	<h2>Analytic Dashboards</h2>
-	<p>A blurb about dashboards.</p>
+	<div class="product-blurb">
+		<h2>Analytic Dashboards</h2>
+		<p>A blurb about dashboards.</p>
+	</div>
 
 	<section class="product-row">
 		<div class="container">
@@ -135,5 +145,9 @@
 				Some Caption Goes Here
 			</div>
 		</div>
+	</section>
+
+	<section class="try-it">
+		<%= link_to 'Live Preview', 'http://unm-dashboard.herokuapp.com/dashboards/1/sections/1', target: '_blank' %>
 	</section>
 </section>

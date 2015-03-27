@@ -294,6 +294,11 @@
 
 
 #product-carousel {
+
+	h1 {
+		color: $purple;
+	}
+
 	background-color: $bg;
 	position: relative;
 	overflow: auto;
@@ -333,6 +338,10 @@
 	#slide-nav {
 		height: 12px;
 		padding-bottom: 40px;
+	}
+
+	.slider__arrows-item {
+		&:hover {opacity: 0.5;}
 	}
 
 	.slider__nav-item--current {
