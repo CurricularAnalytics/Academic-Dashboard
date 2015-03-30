@@ -21,3 +21,6 @@ set :ssh_options, {
 	keys: ["config/keys/academic-dashboards.pem"],
 	user: "ubuntu"
 }
+
+
+#Dashboards!$123
