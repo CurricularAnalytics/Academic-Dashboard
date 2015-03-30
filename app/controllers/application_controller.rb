@@ -9,10 +9,11 @@ class ApplicationController < ActionController::Base
 private
 
 	def user_layout
-		if user_signed_in?
-			'application'
-		else
-			'static'
-		end
+		'static'
+	# 	if user_signed_in?
+	# 		'application'
+	# 	else
+	# 		'static'
+	# 	end
 	end
 end

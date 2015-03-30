@@ -23,4 +23,4 @@ set :ssh_options, {
 }
 
 
-#Dashboards!$123
+#Dashboard!$123
