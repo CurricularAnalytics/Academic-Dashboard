@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :info_requests
+  resources :info_requests, only: [:new, :create]
 
 	root 'static#home'
 	get '/services' => 'static#services'
 	get '/products' => 'static#products'
 	get '/about' => 'static#about'
 
-	resources :institutions
+	#resources :institutions, 
 
-	devise_for :users, :controllers => {:registrations => 'custom_devise/registrations'} 
+	#devise_for :users, :controllers => {:registrations => 'custom_devise/registrations'} 
 
 
   # get 'signin' => 'devise/sessions#new', :as => :new_user_session

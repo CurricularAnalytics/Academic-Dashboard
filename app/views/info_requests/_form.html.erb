@@ -7,7 +7,7 @@
 	</div>                    
 	
 	<div id="info-request-form">
-		<%= form_for(@info_request) do |f| %>
+		<%= form_for(@info_request, remote: true) do |f| %>
 			<ul id='sign-up-errors'>
 				<% resource.errors.full_messages.each do |e| %>
 					<li><%= e %></li>
