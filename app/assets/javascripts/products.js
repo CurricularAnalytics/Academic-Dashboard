@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
 function dashboardcharts() {
-	
+
 	/* Bar Chart */
 	var interactiveBarChart = new AD.CHARTS.interactiveBarChart();
 
@@ -80,7 +80,7 @@ function dashboardcharts() {
 
 											chartData  = {
 												partition: {
-															"name": "University of New Mexico",
+															"name": "University",
 															"top": "true",
 															"children": [
 																	{
@@ -1130,7 +1130,7 @@ function dashboardcharts() {
 			var chartLayoutData = {
 				data:{
 					chartLayout:{
-						
+
 					}
 				}
 			}
