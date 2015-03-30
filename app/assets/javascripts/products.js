@@ -80,7 +80,7 @@ function dashboardcharts() {
 
 											chartData  = {
 												partition: {
-															"name": "University of New Mexico",
+															"name": "University",
 															"top": "true",
 															"children": [
 																	{
