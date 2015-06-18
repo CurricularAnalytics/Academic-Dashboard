@@ -26,6 +26,8 @@ gem 'countries'
 
 gem 'd3-rails'
 
+gem 'httparty'
+
 group :development do 
 	# For Deploying
 	gem 'capistrano'
