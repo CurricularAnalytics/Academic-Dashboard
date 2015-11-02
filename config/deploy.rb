@@ -38,3 +38,14 @@ task :restart do
 		end
 	end
 end
+
+
+task :seed do
+	on roles(:app) do
+		within "/home/ubuntu/apps/current" do
+			with rails_env: fetch(:rails_env) do
+				execute :bundle, "exec rake db:seed RAILS_ENV=production"
+			end
+		end
+	end
+end
